@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./components/Header/Header.jsx";
 
 const App = () => {
-  return <h1 className="font-logo text-5xl">noman</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default App;
