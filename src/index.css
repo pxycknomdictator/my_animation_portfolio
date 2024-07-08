@@ -35,4 +35,17 @@
       transform: scaleX(1);
     }
   }
+
+  .linksBorder{
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+  }
+
+  .linksBorderLG{
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+  }
+
 }
