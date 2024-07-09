@@ -1,0 +1,34 @@
+[
+  {
+    "path": "/images/html.svg",
+    "svgName": "HTML"
+  },
+  {
+    "path": "/images/css.svg",
+    "svgName": "CSS"
+  },
+  {
+    "path": "/images/JavaScript.svg",
+    "svgName": "JavaScript"
+  },
+  {
+    "path": "/images/json.svg",
+    "svgName": "JSON"
+  },
+  {
+    "path": "/images/tailwindcss.svg",
+    "svgName": "TailwindCSS"
+  },
+  {
+    "path": "/images/react.svg",
+    "svgName": "React Js"
+  },
+  {
+    "path": "/images/git.svg",
+    "svgName": "Git"
+  },
+  {
+    "path": "/images/github.svg",
+    "svgName": "Github"
+  }
+]
