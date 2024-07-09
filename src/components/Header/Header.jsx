@@ -3,7 +3,7 @@ import sun from "/images/sun.svg";
 import moon from "/images/moon.svg";
 import menu from "/images/hamburger.svg";
 import whiteMenu from "/images/hamburgerWhite.svg";
-import Logo from "../Logo";
+import Logo from "../Logo/Logo";
 import Navigation from "./Navigation";
 
 const Header = () => {
