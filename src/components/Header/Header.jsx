@@ -10,9 +10,11 @@ const Header = () => {
   const links = ["Home", "About", "Projects", "Skills", "Contact"];
 
   return (
-    <header className="dark:bg-primaryDark bg-primaryLight py-3">
-      <section className="max-w-[89%] mx-auto flex items-end justify-between relative">
-        <Logo />
+    <header className="z-10 dark:bg-primaryDark bg-primaryLight py-4 sticky top-0 bottom-0">
+      <section className="max-w-[89%] mx-auto flex items-center justify-between relative">
+        <div className="mb-5">
+          <Logo />
+        </div>
 
         <div className="lg:flex items-center gap-8 absolute hidden top-[4.5rem] lg:static left-0 w-full lg:w-auto lg:right-0 lg:top-0 bg-primaryLight dark:bg-primaryDark">
           <nav className="py-3 lg:py-0 linksBorder lg:linksBorderLG lg:myBorder border-primaryDark dark:border-primaryLight lg:pr-7">
