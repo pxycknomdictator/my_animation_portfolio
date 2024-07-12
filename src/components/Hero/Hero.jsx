@@ -18,7 +18,7 @@ const Hero = () => {
             <h2 className="text-2xl sm:text-3xl xl:text-5xl md:text-4xl font-[500] my-4 text-center lg:text-left">
               Frontend Developer 💻
             </h2>
-            <article className="font-[500] text-secondaryDark dark:text-secondaryLight text-center text-[.90rem] md:text-[1rem] lg:text-[.85rem] xl:text-[1rem] lg:text-justify">
+            <article className="font-[500] text-secondaryDark dark:text-secondaryLight text-center text-[.90rem] md:text-[1rem] lg:text-[.85rem] xl:text-[1.1rem] sm:text-justify">
               I'm a front-end developer who enjoys creating attractive,
               responsive interfaces using React.js and Tailwind CSS. I approach
               each project with a determination to succeed.

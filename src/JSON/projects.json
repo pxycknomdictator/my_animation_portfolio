@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "heading": "Huddle Landing Page",
+    "path": "/images/project1.jpg",
+    "description": "Discover Huddle's sleek landing page design, featuring modern curved sections for a polished user experience.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "https://github.com/pxycknomdictator/HuddleLandingPage.git",
+    "URL": "https://huddle-landing-page-pxycknomdictator.vercel.app/"
+  },
+  {
+    "id": 2,
+    "heading": "Age Calculator",
+    "path": "/images/project2.jpg",
+    "description": "AgeTracker simplifies age calculation with precision, providing your exact age in years, months, and days.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "https://github.com/pxycknomdictator/Age-Calculator.git",
+    "URL": "https://age-calculator-pxycknomdictator.vercel.app/"
+  },
+  {
+    "id": 3,
+    "heading": "Tip Calculator",
+    "path": "/images/project3.jpg",
+    "description": "A tip calculator computes gratuity based on the bill total and chosen percentage, ensuring accurate tipping.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "https://github.com/pxycknomdictator/TipCalculator-App.git",
+    "URL": "https://tip-calculator-app-pxycknomdictator.vercel.app/"
+  },
+  {
+    "id": 4,
+    "heading": "Notification Page",
+    "path": "/images/project4.jpg",
+    "description": "Stay updated and organized with our Notification Page, designed to keep you informed with ease.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "https://github.com/pxycknomdictator/Notification-Page.git",
+    "URL": "https://notification-page-pxycknomdictator.vercel.app/"
+  },
+  {
+    "id": 5,
+    "heading": "E-commerce Product Page",
+    "path": "/images/project5.jpg",
+    "description": "Explore our meticulously designed E-commerce Product Page for a seamless shopping experience.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "",
+    "URL": ""
+  },
+  {
+    "id": 6,
+    "heading": "Theme Switcher Calculator",
+    "path": "/images/project6.jpg",
+    "description": "Experience the flexibility of our Calculator app with light, dark, and neon themes, catering to your style preferences day or night.",
+    "visit": "Visit Now!",
+    "code": "github Code",
+    "repository": "",
+    "URL": ""
+  }
+]

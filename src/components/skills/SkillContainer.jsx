@@ -10,7 +10,7 @@ const SkillContainer = () => {
       className="w-full bg-secondaryLight dark:bg-secondaryDark py-16"
     >
       <Heading
-        text="The skills && and technologies I am really good at 🔥"
+        text="Skilled in a wide range of advanced technologies 🔥"
         skillName="Skills"
       />
       <section className="w-full sm:w-[95%] sm:mx-auto place-items-center grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-y-6 lg:gap-0">

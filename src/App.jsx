@@ -9,8 +9,8 @@ const App = () => {
     <main className="bg-primaryLight dark:bg-primaryDark transition-all">
       <Header />
       <Hero />
-      <SkillContainer />
       <ProjectContainer />
+      <SkillContainer />
     </main>
   );
 };
