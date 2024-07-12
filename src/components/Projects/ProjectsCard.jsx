@@ -9,10 +9,10 @@ const ProjectCard = ({ data }) => {
       <img src={path} alt={path} className="cursor-pointer" />
       <div className="px-7 py-8 bg-secondaryLight dark:bg-secondaryDark">
         <div className="flex flex-col justify-between gap-5">
-          <h3 className="font-semibold text-[1.1rem] md:text-xl lg:text-2xl">
+          <h3 className="font-semibold text-[1.1rem] md:text-[1.2rem] lg:text-[1.3rem] text-secondaryDark dark:text-secondaryLight">
             {heading}
           </h3>
-          <article className="text-[.95rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] text-secondaryDark dark:text-secondaryLight text-justify md:text-left">
+          <article className="text-[.95rem] sm:text-[1rem] md:text-[1rem] text-secondaryDark dark:text-secondaryLight text-justify md:text-left">
             {description}
           </article>
         </div>
@@ -20,14 +20,14 @@ const ProjectCard = ({ data }) => {
           <a
             href={URL}
             target="_blank"
-            className="text-center text-[.9rem] sm:text-[1rem] py-1.5 md:py-1.5 lg:py-2 bg-primaryDark dark:bg-secondaryLight dark:text-secondaryDark text-white font-[500] rounded-md text-xl cursor-pointer"
+            className="text-center text-[.89rem] sm:text-[1rem] py-1.5 md:py-1.5 lg:py-2 transition-all text-white font-[500] rounded-md text-xl cursor-pointer bg-blue-500 hover:bg-blue-600"
           >
             {visit}
           </a>
           <a
             href={repository}
             target="_blank"
-            className="text-center text-[.9rem] sm:text-[1rem] py-1.5 md:py-1.5 lg:py-2 bg-primaryDark dark:bg-secondaryLight dark:text-secondaryDark text-white font-[500] rounded-md text-xl cursor-pointer"
+            className="text-center text-[.89rem] sm:text-[1rem] py-1.5 md:py-1.5 lg:py-2 transition-all text-white font-[500] rounded-md text-xl cursor-pointer bg-red-600 hover:bg-red-700"
           >
             {code}
           </a>
