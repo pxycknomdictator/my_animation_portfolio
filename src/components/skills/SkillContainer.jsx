@@ -7,7 +7,7 @@ const SkillContainer = () => {
   return (
     <div
       id="Skills"
-      className="w-full bg-secondaryLight dark:bg-secondaryDark py-10"
+      className="w-full bg-secondaryLight dark:bg-secondaryDark py-16"
     >
       <Heading
         text="The skills && and technologies I am really good at 🔥"

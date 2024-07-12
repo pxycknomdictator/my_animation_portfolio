@@ -10,7 +10,7 @@ const Header = () => {
   const links = ["Home", "About", "Projects", "Skills", "Contact"];
 
   return (
-    <header className="z-10 dark:bg-primaryDark bg-primaryLight py-4 sticky top-0 bottom-0">
+    <header className="myShadow dark:myDarkShadow z-10 dark:bg-primaryDark bg-primaryLight py-4 sticky top-0 bottom-0">
       <section className="max-w-[89%] mx-auto flex items-center justify-between relative">
         <div className="mb-5">
           <Logo />
@@ -26,10 +26,10 @@ const Header = () => {
           </nav>
 
           <div className="mt-4 lg:mt-0 flex items-center justify-between lg:gap-5">
-            <span className="text-primaryDark dark:text-primaryLight font-[500]">
+            <span className="text-primaryDark dark:text-primaryLight font-[500] text-[1.1rem]">
               Switch Theme
             </span>
-            <div className="w-6">
+            <div className="w-6 cursor-pointer">
               <img className="max-w-full" src={moon} alt={moon} />
             </div>
           </div>
