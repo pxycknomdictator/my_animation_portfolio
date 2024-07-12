@@ -17,15 +17,14 @@ const ProjectCard = ({ data }) => {
             {description}
           </article>
         </div>
-        <div className="grid md:grid-cols-2 gap-4 md:gap-3 mt-5">
-          <NavigateButtons link={URL} color="blue" arrow={arrow} text={visit} />
-          <NavigateButtons
-            link={repository}
-            color="red"
-            arrow={arrow}
-            text={code}
-          />
-        </div>
+
+        <NavigateButtons
+          visit={visit}
+          code={code}
+          repository={repository}
+          URL={URL}
+          arrow={arrow}
+        />
       </div>
     </div>
   );
