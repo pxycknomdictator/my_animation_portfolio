@@ -3,6 +3,7 @@ import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import SkillContainer from "./components/skills/SkillContainer.jsx";
 import ProjectContainer from "./components/Projects/ProjectContainer.jsx";
+import ContactContainer from "./components/Contact/ContactContainer.jsx";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <ProjectContainer />
       <SkillContainer />
+      <ContactContainer />
     </main>
   );
 };
