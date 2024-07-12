@@ -7,7 +7,8 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/HuddleLandingPage.git",
-    "URL": "https://huddle-landing-page-pxycknomdictator.vercel.app/"
+    "URL": "https://huddle-landing-page-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/Age-Calculator.git",
-    "URL": "https://age-calculator-pxycknomdictator.vercel.app/"
+    "URL": "https://age-calculator-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/TipCalculator-App.git",
-    "URL": "https://tip-calculator-app-pxycknomdictator.vercel.app/"
+    "URL": "https://tip-calculator-app-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/Notification-Page.git",
-    "URL": "https://notification-page-pxycknomdictator.vercel.app/"
+    "URL": "https://notification-page-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/Product-Card.git",
-    "URL": "https://product-card-pxycknomdictator.vercel.app/"
+    "URL": "https://product-card-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   },
   {
     "id": 6,
@@ -57,6 +62,7 @@
     "visit": "Preview Site!",
     "code": "Preview Code",
     "repository": "https://github.com/pxycknomdictator/Calculator-app.git",
-    "URL": "https://calculator-app-pxycknomdictator.vercel.app/"
+    "URL": "https://calculator-app-pxycknomdictator.vercel.app/",
+    "arrow": "/images/arrow.svg"
   }
 ]
