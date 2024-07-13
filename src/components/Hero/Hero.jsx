@@ -5,6 +5,7 @@ import Links from "./Links";
 
 import linkedin from "/images/linkedin.svg";
 import github from "/images/github.svg";
+import Illustration from "./Illustration";
 
 const Hero = () => {
   return (
@@ -47,9 +48,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div>
-          <img className="max-w-full" src={hero} alt={hero} />
-        </div>
+        <Illustration illustration={hero} />
       </div>
     </section>
   );

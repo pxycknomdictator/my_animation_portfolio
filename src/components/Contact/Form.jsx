@@ -3,7 +3,7 @@ import FormName from "./FormName";
 
 const Form = () => {
   return (
-    <form className="w-full flex flex-col gap-10 p-4 sm:pt-7 px-7 pb-0 bg-secondaryLight dark:bg-secondaryDark rounded-xl lg:h-[91.2%]">
+    <form className="w-full pb-7 flex flex-col gap-10 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]">
       <div>
         <FormName field="Your Full Name" />
         <input

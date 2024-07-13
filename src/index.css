@@ -55,8 +55,4 @@
   .myDarkShadow {
     box-shadow: 0px 0px 20px #00000069;
   }
-
-  .area {
-    grid-area: 2 / 1 / 2 / 3;
-  }
 }

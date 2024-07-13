@@ -4,12 +4,14 @@ import Hero from "./components/Hero/Hero.jsx";
 import SkillContainer from "./components/skills/SkillContainer.jsx";
 import ProjectContainer from "./components/Projects/ProjectContainer.jsx";
 import ContactContainer from "./components/Contact/ContactContainer.jsx";
+import About from "./components/About/About.jsx";
 
 const App = () => {
   return (
     <main className="bg-primaryLight dark:bg-primaryDark transition-all">
       <Header />
       <Hero />
+      <About />
       <ProjectContainer />
       <SkillContainer />
       <ContactContainer />
