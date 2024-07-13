@@ -1,0 +1,32 @@
+[
+  {
+    "intro": "location",
+    "flag": "/images/pakistan.svg",
+    "leftSide1": "country",
+    "rightSide1": "Pakistan",
+    "leftSide2": "city",
+    "rightSide2": "karachi",
+    "leftSide3": "street",
+    "rightSide3": "Kalapul, Karachi"
+  },
+  {
+    "intro": "emails",
+    "flag": "/images/email.svg",
+    "leftSide1": "Email",
+    "rightSide1": "pxycknomdictator@gmail.com",
+    "leftSide2": "github",
+    "rightSide2": "pxycknomdictator",
+    "leftSide3": "facebook",
+    "rightSide3": "@pxycknomdictator"
+  },
+  {
+    "intro": "support",
+    "flag": "/images/phone.svg",
+    "leftSide1": "Support Services",
+    "rightSide1": "00000",
+    "leftSide2": "Office",
+    "rightSide2": "+923247416294",
+    "leftSide3": "Personal",
+    "rightSide3": "+923247416294"
+  }
+]
