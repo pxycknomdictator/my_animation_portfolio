@@ -3,7 +3,7 @@ import FormName from "./FormName";
 
 const Form = () => {
   return (
-    <form className="w-full flex flex-col gap-10 p-7 bg-secondaryLight dark:bg-secondaryDark rounded-xl">
+    <form className="w-full flex flex-col gap-10 p-4 sm:pt-7 px-7 pb-0 bg-secondaryLight dark:bg-secondaryDark rounded-xl lg:h-[91.2%]">
       <div>
         <FormName field="Your Full Name" />
         <input
@@ -45,7 +45,7 @@ const Form = () => {
 
       <div>
         <button
-          className="uppercase font-[500] bg-blue-500 hover:bg-blue-600 text-secondaryLight py-2 lg:px-5 rounded-sm outline-none transition-all"
+          className="uppercase font-[500] bg-blue-500 hover:bg-blue-600 text-secondaryLight py-2 w-full rounded-md md:w-44 md:py-2.5 lg:rounded-sm outline-none transition-all"
           type="submit"
         >
           send message
