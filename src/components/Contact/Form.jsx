@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import FormName from "./FormName";
+import FormStore from "../../Store";
 
 const Form = () => {
+  const { user, handleSubmitForm, handleChangeFields } = useContext(FormStore);
+
   return (
-    <form className="w-full pb-7 flex flex-col gap-10 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]">
+    <form
+      className="w-full pb-7 flex flex-col gap-10 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]"
+      onSubmit={handleSubmitForm}
+    >
       <div>
         <FormName field="Your Full Name" />
         <input
@@ -11,6 +17,8 @@ const Form = () => {
           type="text"
           name="name"
           placeholder="Enter your full name"
+          value={user.name}
+          onChange={(event) => handleChangeFields(event)}
         />
       </div>
 
@@ -21,6 +29,8 @@ const Form = () => {
           type="text"
           name="email"
           placeholder="Enter your email address"
+          value={user.email}
+          onChange={(event) => handleChangeFields(event)}
         />
       </div>
 
@@ -31,6 +41,8 @@ const Form = () => {
           type="text"
           name="subject"
           placeholder="Enter your subject"
+          value={user.subject}
+          onChange={(event) => handleChangeFields(event)}
         />
       </div>
 
@@ -40,6 +52,8 @@ const Form = () => {
           rows="6"
           className="rounded-sm outline-none border-none bg-primaryLight dark:bg-primaryDark text-secondaryDark dark:text-secondaryLight w-full py-2.5 pl-4 text-[1.1rem] inline-block mt-3"
           name="message"
+          value={user.message}
+          onChange={(event) => handleChangeFields(event)}
         ></textarea>
       </div>
 

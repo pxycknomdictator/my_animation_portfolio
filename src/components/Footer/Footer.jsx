@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 
 const Footer = () => {
+
   return (
     <footer>
       <div className="block text-center text-[1rem] sm:text-2xl font-[500] bg-secondaryLight dark:bg-secondaryDark py-6 text-secondaryDark dark:text-secondaryLight">
