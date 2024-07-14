@@ -5,6 +5,7 @@ import SkillContainer from "./components/skills/SkillContainer.jsx";
 import ProjectContainer from "./components/Projects/ProjectContainer.jsx";
 import ContactContainer from "./components/Contact/ContactContainer.jsx";
 import About from "./components/About/About.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <ProjectContainer />
       <SkillContainer />
       <ContactContainer />
+      <Footer />
     </main>
   );
 };
