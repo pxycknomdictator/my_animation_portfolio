@@ -55,13 +55,13 @@ const Header = () => {
         >
           {dropMenu ? (
             <img
-              className="max-w-full"
+              className="max-w-full myRotation"
               src={`${theme ? crossWhite : cross}`}
               alt={`${theme ? crossWhite : cross}`}
             />
           ) : (
             <img
-              className="max-w-full"
+              className="max-w-full myNewRotation"
               src={`${theme ? whiteMenu : menu}`}
               alt={`${theme ? whiteMenu : menu}`}
             />
