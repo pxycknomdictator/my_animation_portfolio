@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FormStore from "./index.js";
 
 const FormContextProvider = ({ children }) => {
@@ -10,6 +10,25 @@ const FormContextProvider = ({ children }) => {
   };
 
   const [user, setUser] = useState(initialValues);
+
+  const localTheme = "CurrentTheme";
+  const [theme, setTheme] = useState(
+    JSON.parse(localStorage.getItem(localTheme)) || false
+  );
+
+  useEffect(() => {
+    localStorage.setItem(localTheme, JSON.stringify(theme));
+
+    if (theme) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const switchTheme = () => {
+    setTheme((prevTheme) => !prevTheme);
+  };
 
   // input fields function
   const handleChangeFields = (event) => {
@@ -24,7 +43,9 @@ const FormContextProvider = ({ children }) => {
   };
 
   return (
-    <FormStore.Provider value={{ user, handleSubmitForm, handleChangeFields }}>
+    <FormStore.Provider
+      value={{ user, handleSubmitForm, handleChangeFields, theme, switchTheme }}
+    >
       {children}
     </FormStore.Provider>
   );
