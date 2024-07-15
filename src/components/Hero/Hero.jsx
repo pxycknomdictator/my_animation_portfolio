@@ -9,7 +9,10 @@ import Illustration from "./Illustration";
 
 const Hero = () => {
   return (
-    <section className="bg-primaryLight dark:bg-primaryDark mt-14 lg:mt-[.30rem]">
+    <section
+      id="Home"
+      className="bg-primaryLight dark:bg-primaryDark mt-14 lg:mt-[.30rem]"
+    >
       <div className="max-w-[89%] mx-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center">
           <div className="text-primaryDark dark:text-primaryLight">

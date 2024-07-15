@@ -5,7 +5,7 @@ import projectJson from "../../JSON/projects.json";
 
 const ProjectContainer = () => {
   return (
-    <section className="mx-auto w-[89%] py-16 bg-primaryLight dark:bg-primaryDark">
+    <section id="Projects" className="mx-auto w-[89%] py-16 bg-primaryLight dark:bg-primaryDark">
       <Heading
         text="Explore my diverse project showcase highlighting creativity and skills 🚀"
         skillName="Projects"

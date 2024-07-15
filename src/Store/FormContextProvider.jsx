@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import FormStore from "./index.js";
 
 const FormContextProvider = ({ children }) => {
+  const fullName = /^[a-zA-Z]+(?: [a-zA-Z]+)?$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
   const initialValues = {
     name: "",
     email: "",
@@ -11,6 +14,7 @@ const FormContextProvider = ({ children }) => {
 
   const [user, setUser] = useState(initialValues);
   const [dropMenu, setDropMenu] = useState(false);
+  const [error, setError] = useState({});
 
   const localTheme = "CurrentTheme";
   const [theme, setTheme] = useState(
@@ -40,7 +44,34 @@ const FormContextProvider = ({ children }) => {
   // form submit function
   const handleSubmitForm = (event) => {
     event.preventDefault();
-    setUser(() => initialValues);
+
+    const { name, email, message, subject } = user;
+
+    const newErrors = {};
+
+    if (!fullName.test(name)) {
+      newErrors["name"] = "Please enter a valid name";
+    }
+
+    if (email.trim() === "") {
+      newErrors["email"] = "Email is required";
+    } else if (!emailRegex.test(email)) {
+      newErrors["email"] = "Please enter a valid email address";
+    }
+
+    if (subject.trim() === "") {
+      newErrors["subject"] = "Subject is required";
+    }
+
+    if (message.trim() === "") {
+      newErrors["message"] = "Message is required";
+    }
+
+    if (Object.keys(newErrors).length === 0) {
+      setUser(initialValues);
+    }
+
+    setError(newErrors);
   };
 
   const handleDropdown = () => {
@@ -57,6 +88,7 @@ const FormContextProvider = ({ children }) => {
         switchTheme,
         handleDropdown,
         dropMenu,
+        error,
       }}
     >
       {children}

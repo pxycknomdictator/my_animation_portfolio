@@ -7,8 +7,14 @@ import contactInfo from "../../JSON/information.json";
 
 const ContactContainer = () => {
   return (
-    <section className="md:w-[89%] mx-auto py-16 bg-primaryLight dark:bg-primaryDark">
-      <Heading skillName="Contact" text="For collaborations or inquiries, drop me a message! ✉️" />
+    <section
+      id="Contact"
+      className="md:w-[89%] mx-auto py-16 bg-primaryLight dark:bg-primaryDark"
+    >
+      <Heading
+        skillName="Contact"
+        text="For collaborations or inquiries, drop me a message! ✉️"
+      />
 
       <div className="grid grid-cols-1 lg:flex gap-8 lg:grid-cols-2 mt-7">
         <div className="w-full lg:w-[60%]">

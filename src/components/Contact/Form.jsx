@@ -3,11 +3,12 @@ import FormName from "./FormName";
 import FormStore from "../../Store";
 
 const Form = () => {
-  const { user, handleSubmitForm, handleChangeFields } = useContext(FormStore);
+  const { user, handleSubmitForm, handleChangeFields, error } =
+    useContext(FormStore);
 
   return (
     <form
-      className="w-full pb-7 flex flex-col gap-10 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]"
+      className="w-full pb-7 flex flex-col gap-4 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]"
       onSubmit={handleSubmitForm}
     >
       <div>
@@ -20,6 +21,7 @@ const Form = () => {
           value={user.name}
           onChange={(event) => handleChangeFields(event)}
         />
+        <span className="text-red-500 block mt-4 font-[500]">{error.name}</span>
       </div>
 
       <div>
@@ -32,6 +34,7 @@ const Form = () => {
           value={user.email}
           onChange={(event) => handleChangeFields(event)}
         />
+        <span className="text-red-500 block mt-4 font-[500]">{error.email}</span>
       </div>
 
       <div>
@@ -44,6 +47,7 @@ const Form = () => {
           value={user.subject}
           onChange={(event) => handleChangeFields(event)}
         />
+        <span className="text-red-500 block mt-4 font-[500]">{error.subject}</span>
       </div>
 
       <div>
@@ -55,6 +59,7 @@ const Form = () => {
           value={user.message}
           onChange={(event) => handleChangeFields(event)}
         ></textarea>
+        <span className="text-red-500 block mt-4 font-[500]">{error.message}</span>
       </div>
 
       <div>

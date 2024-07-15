@@ -6,7 +6,10 @@ import Article from "./Article";
 
 const About = () => {
   return (
-    <section className="bg-secondaryLight dark:bg-secondaryDark py-16">
+    <section
+      id="About"
+      className="bg-secondaryLight dark:bg-secondaryDark py-16"
+    >
       <Heading
         text="My Journey in Crafting Compelling Portfolios ✨"
         skillName="About"
