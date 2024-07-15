@@ -10,6 +10,7 @@ const FormContextProvider = ({ children }) => {
   };
 
   const [user, setUser] = useState(initialValues);
+  const [dropMenu, setDropMenu] = useState(false);
 
   const localTheme = "CurrentTheme";
   const [theme, setTheme] = useState(
@@ -20,7 +21,7 @@ const FormContextProvider = ({ children }) => {
     localStorage.setItem(localTheme, JSON.stringify(theme));
 
     if (theme) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("dark", "animation");
     } else {
       document.documentElement.classList.remove("dark");
     }
@@ -42,9 +43,21 @@ const FormContextProvider = ({ children }) => {
     setUser(() => initialValues);
   };
 
+  const handleDropdown = () => {
+    setDropMenu(!dropMenu);
+  };
+
   return (
     <FormStore.Provider
-      value={{ user, handleSubmitForm, handleChangeFields, theme, switchTheme }}
+      value={{
+        user,
+        handleSubmitForm,
+        handleChangeFields,
+        theme,
+        switchTheme,
+        handleDropdown,
+        dropMenu,
+      }}
     >
       {children}
     </FormStore.Provider>

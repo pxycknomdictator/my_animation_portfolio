@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   return (
-    <main className="bg-primaryLight dark:bg-primaryDark transition-all">
+    <main className="bg-primaryLight dark:bg-primaryDark">
       <Header />
       <Hero />
       <About />
