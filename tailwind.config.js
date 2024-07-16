@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,7 +14,7 @@ export default {
         secondaryLight: "hsl(240, 25%, 98%)",
       },
       fontFamily: {
-        logo: "Playwrite AU TAS, cursive",
+        logo: "logo",
       },
     },
   },
