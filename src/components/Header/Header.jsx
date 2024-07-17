@@ -35,7 +35,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="py-2.5 lg:py-0 mt-4 lg:mt-0 flex items-center justify-between lg:gap-5">
+          <div className="py-5 lg:py-0 flex items-center justify-between lg:gap-5">
             <span className="text-primaryDark dark:text-primaryLight font-[500] text-[1.1rem]">
               Switch Theme
             </span>

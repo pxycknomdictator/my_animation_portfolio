@@ -29,7 +29,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      bottom: 0;
+      bottom: -7px;
       border-radius: 4px;
       transform: scaleX(0);
       transform-origin: right;
@@ -46,7 +46,7 @@
       position: absolute;
       border-radius: 4px;
       width: 100%;
-      bottom: 0;
+      bottom: -7px;
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.69s ease-in-out;
