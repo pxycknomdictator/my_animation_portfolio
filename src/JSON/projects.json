@@ -2,7 +2,7 @@
   {
     "id": 1,
     "heading": "Huddle Landing Page",
-    "path": "/images/project1.jpg",
+    "path": "/images/project1.webp",
     "description": "Discover Huddle's sleek landing page design, featuring modern curved sections for a polished user experience.",
     "visit": "Preview Site!",
     "code": "Preview Code",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "heading": "Age Calculator",
-    "path": "/images/project2.jpg",
+    "path": "/images/project2.webp",
     "description": "AgeTracker simplifies age calculation with precision, providing your exact age in years, months, and days.",
     "visit": "Preview Site!",
     "code": "Preview Code",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "heading": "Tip Calculator",
-    "path": "/images/project3.jpg",
+    "path": "/images/project3.webp",
     "description": "A tip calculator computes gratuity based on the bill total and chosen percentage, ensuring accurate tipping.",
     "visit": "Preview Site!",
     "code": "Preview Code",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "heading": "Notification Page",
-    "path": "/images/project4.jpg",
+    "path": "/images/project4.webp",
     "description": "Stay updated and organized with our Notification Page, designed to keep you informed with ease.",
     "visit": "Preview Site!",
     "code": "Preview Code",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "heading": "E-commerce Product Page",
-    "path": "/images/project5.jpg",
+    "path": "/images/project5.webp",
     "description": "Explore our meticulously designed E-commerce Product Page for a seamless shopping experience.",
     "visit": "Preview Site!",
     "code": "Preview Code",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "heading": "Theme Switcher Calculator",
-    "path": "/images/project6.jpg",
+    "path": "/images/project6.webp",
     "description": "Experience the flexibility of our Calculator app with light, dark, and neon themes, catering to your style preferences day or night.",
     "visit": "Preview Site!",
     "code": "Preview Code",
