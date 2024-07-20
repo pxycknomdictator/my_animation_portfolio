@@ -20,6 +20,7 @@ const Form = () => {
           placeholder="Enter your full name"
           value={user.name}
           onChange={(event) => handleChangeFields(event)}
+          autoComplete="off"
         />
         <span className="text-red-500 block mt-4 font-[500]">{error.name}</span>
       </div>
@@ -33,8 +34,11 @@ const Form = () => {
           placeholder="Enter your email address"
           value={user.email}
           onChange={(event) => handleChangeFields(event)}
+          autoComplete="off"
         />
-        <span className="text-red-500 block mt-4 font-[500]">{error.email}</span>
+        <span className="text-red-500 block mt-4 font-[500]">
+          {error.email}
+        </span>
       </div>
 
       <div>
@@ -46,8 +50,11 @@ const Form = () => {
           placeholder="Enter your subject"
           value={user.subject}
           onChange={(event) => handleChangeFields(event)}
+          autoComplete="off"
         />
-        <span className="text-red-500 block mt-4 font-[500]">{error.subject}</span>
+        <span className="text-red-500 block mt-4 font-[500]">
+          {error.subject}
+        </span>
       </div>
 
       <div>
@@ -58,8 +65,11 @@ const Form = () => {
           name="message"
           value={user.message}
           onChange={(event) => handleChangeFields(event)}
+          autoComplete="off"
         ></textarea>
-        <span className="text-red-500 block mt-4 font-[500]">{error.message}</span>
+        <span className="text-red-500 block mt-4 font-[500]">
+          {error.message}
+        </span>
       </div>
 
       <div>
