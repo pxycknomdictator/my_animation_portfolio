@@ -1,9 +1,5 @@
 import { createContext } from "react";
 
-const FormStore = createContext({
-  user: {},
-  submit: () => {},
-  received: () => {},
-});
+const FormStore = createContext({});
 
 export default FormStore;

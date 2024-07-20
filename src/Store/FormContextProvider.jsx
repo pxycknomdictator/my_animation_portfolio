@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import FormStore from "./index.js";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const FormContextProvider = ({ children }) => {
-  const fullName = /^[a-zA-Z]+(?: [a-zA-Z]+)?$/;
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
   const initialValues = {
     name: "",
     email: "",
@@ -15,6 +14,16 @@ const FormContextProvider = ({ children }) => {
   const [user, setUser] = useState(initialValues);
   const [dropMenu, setDropMenu] = useState(false);
   const [error, setError] = useState({});
+
+  const fullName = /^[a-zA-Z]+(?: [a-zA-Z]+)?$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const links = ["Home", "About", "Projects", "Skills", "Contact"];
+
+  function alertMessage() {
+    toast.success("Your form Submitted", {
+      theme: `${theme ? "dark" : "light"}`,
+    });
+  }
 
   const localTheme = "CurrentTheme";
   const [theme, setTheme] = useState(
@@ -69,6 +78,7 @@ const FormContextProvider = ({ children }) => {
 
     if (Object.keys(newErrors).length === 0) {
       setUser(initialValues);
+      alertMessage();
     }
 
     setError(newErrors);
@@ -89,6 +99,7 @@ const FormContextProvider = ({ children }) => {
         handleDropdown,
         dropMenu,
         error,
+        links,
       }}
     >
       {children}

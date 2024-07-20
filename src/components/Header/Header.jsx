@@ -10,9 +10,8 @@ import Navigation from "./Navigation";
 import FormStore from "../../Store";
 
 const Header = () => {
-  const links = ["Home", "About", "Projects", "Skills", "Contact"];
 
-  const { theme, switchTheme, handleDropdown, dropMenu } =
+  const { theme, switchTheme, handleDropdown, dropMenu, links } =
     useContext(FormStore);
 
   return (
