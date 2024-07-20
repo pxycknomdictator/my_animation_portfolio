@@ -5,7 +5,7 @@ const Button = ({ link, URL }) => {
     <a
       href={URL}
       target="_blank"
-      className="hover:scale-110 transition-all inline-block text-center font-[500] bg-blue-500 py-3 lg:px-8 rounded-md text-secondaryLight hover:bg-blue-600 delay-150"
+      className="inline-block text-center font-[500] bg-blue-500 py-3 lg:px-8 rounded-md text-secondaryLight hover:bg-blue-600 delay-150 w-full"
     >
       <span>{link}</span>
     </a>

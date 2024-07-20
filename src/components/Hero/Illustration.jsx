@@ -1,11 +1,7 @@
 import React from "react";
 
 const Illustration = ({ illustration }) => {
-  return (
-    <div>
-      <img className="max-w-full" src={illustration} alt={illustration} />
-    </div>
-  );
+  return <img className="max-w-full" src={illustration} alt={illustration} />;
 };
 
 export default Illustration;
