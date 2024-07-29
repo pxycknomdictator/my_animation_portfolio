@@ -1,12 +1,18 @@
 import React from "react";
 import NavigateButtons from "./NavigateButtons";
-
-const ProjectCard = ({ data }) => {
+import { motion } from "framer-motion";
+const ProjectCard = ({ data, id }) => {
   const { path, description, visit, code, heading, repository, URL, arrow } =
     data;
 
   return (
-    <div className="rounded-xl overflow-hidden w-full h-auto hover:scale-105 transition-all">
+    <motion.div
+      initial={{ opacity: 0, y: 69 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: id * 0.25, duration: 0.69 }}
+      viewport={{ once: true }}
+      className="rounded-xl overflow-hidden w-full h-auto hover:scale-105 transition-all"
+    >
       <img src={path} alt={path} className="cursor-pointer" />
       <div className="px-7 py-8 bg-secondaryLight dark:bg-secondaryDark">
         <div className="flex flex-col justify-between gap-5">
@@ -26,7 +32,7 @@ const ProjectCard = ({ data }) => {
           arrow={arrow}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

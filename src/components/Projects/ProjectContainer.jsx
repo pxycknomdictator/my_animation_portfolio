@@ -13,7 +13,7 @@ const ProjectContainer = () => {
 
       <section className="grid gap-y-8 md:grid-cols-2 md:gap-7 lg:gap-9 xl:grid-cols-3 mt-5">
         {projectJson.map((elements) => {
-          return <ProjectCard key={elements.id} data={elements} />;
+          return <ProjectCard key={elements.id} id={elements.id} data={elements} />;
         })}
       </section>
     </section>

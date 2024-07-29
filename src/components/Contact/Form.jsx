@@ -1,13 +1,18 @@
 import React, { useContext } from "react";
 import FormName from "./FormName";
 import FormStore from "../../Store";
+import { motion } from "framer-motion";
 
 const Form = () => {
   const { user, handleSubmitForm, handleChangeFields, error } =
     useContext(FormStore);
 
   return (
-    <form
+    <motion.form
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.69, duration: 0.9 }}
+      viewport={{ once: true }}
       className="w-full pb-7 flex flex-col gap-4 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]"
       onSubmit={handleSubmitForm}
     >
@@ -61,7 +66,7 @@ const Form = () => {
         <FormName field="Your Message" />
         <textarea
           rows="6"
-          className="rounded-sm outline-none border-none bg-primaryLight dark:bg-primaryDark text-secondaryDark dark:text-secondaryLight w-full py-2.5 pl-4 text-[1.1rem] inline-block mt-3"
+          className="rounded-sm outline-none border-none bg-primaryLight dark:bg-primaryDark text-secondaryDark dark:text-secondaryLight w-full py-2.5 pl-4 text-[1.1rem] inline-block mt-3 resize-none"
           name="message"
           value={user.message}
           onChange={(event) => handleChangeFields(event)}
@@ -80,7 +85,7 @@ const Form = () => {
           send message
         </button>
       </div>
-    </form>
+    </motion.form>
   );
 };
 

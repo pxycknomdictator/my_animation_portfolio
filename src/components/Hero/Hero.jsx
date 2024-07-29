@@ -1,5 +1,5 @@
 import React from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import hero from "/images/hero.svg";
 import Button from "./Button";
 import Links from "./Links";

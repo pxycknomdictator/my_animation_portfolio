@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import React from "react";
 
-const Information = ({ information }) => {
+const Information = ({ information, id }) => {
   const {
     flag,
     leftSide1,
@@ -12,7 +13,13 @@ const Information = ({ information }) => {
   } = information;
 
   return (
-    <section className="text-center bg-secondaryLight dark:bg-secondaryDark pt-8 pb-5 px-5 lg:px-9 md:rounded-xl w-full">
+    <motion.section
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: id * .3, duration: 0.89 }}
+      viewport={{ once: true }}
+      className="text-center bg-secondaryLight dark:bg-secondaryDark pt-8 pb-5 px-5 lg:px-9 md:rounded-xl w-full"
+    >
       <div className="text-center bg-green-600 inline-block py-3 px-3 rounded-full">
         <img className="w-8 inline" src={flag} alt={flag} />
       </div>
@@ -30,7 +37,7 @@ const Information = ({ information }) => {
           <li>{rightSide3}</li>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

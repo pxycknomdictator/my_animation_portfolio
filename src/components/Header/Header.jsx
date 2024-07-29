@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { motion, AnimatePresence, delay } from "framer-motion";
+import { motion } from "framer-motion";
 
 import sun from "/images/sun.svg";
 import moon from "/images/moon.svg";

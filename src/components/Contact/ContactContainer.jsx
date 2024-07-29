@@ -4,10 +4,15 @@ import Heading from "../Heading/Heading";
 import FormHeading from "./FormHeading";
 import Information from "./Information";
 import contactInfo from "../../JSON/information.json";
+import { motion } from "framer-motion";
 
 const ContactContainer = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 0.89 }}
+      viewport={{ once: true }}
       id="Contact"
       className="md:w-[89%] mx-auto py-16 bg-primaryLight dark:bg-primaryDark"
     >
@@ -24,14 +29,25 @@ const ContactContainer = () => {
 
         <div className="text-secondaryLight lg:w-[40%]">
           <FormHeading text="contact information" />
-          <div className="grid gap-6 lg:gap-10">
-            {contactInfo.map((element) => {
-              return <Information key={element.intro} information={element} />;
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.89, delay: 0.23 }}
+            className="grid gap-6 lg:gap-10"
+          >
+            {contactInfo.map((element, index) => {
+              return (
+                <Information
+                  key={element.intro}
+                  id={index}
+                  information={element}
+                />
+              );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

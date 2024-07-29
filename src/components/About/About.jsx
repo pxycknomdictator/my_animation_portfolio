@@ -3,10 +3,15 @@ import about from "/images/about.svg";
 import Illustration from "../Hero/Illustration";
 import Heading from "../Heading/Heading";
 import Article from "./Article";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.69, duration: 1 }}
+      viewport={{ once: true }}
       id="About"
       className="bg-secondaryLight dark:bg-secondaryDark py-16"
     >
@@ -15,8 +20,21 @@ const About = () => {
         skillName="About"
       />
       <div className="max-w-[89%] mx-auto grid grid-cols-1 lg:grid-cols-2 mt-7">
-        <Illustration illustration={about} />
-        <div className="flex flex-col text-secondaryDark dark:text-secondaryLight">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <Illustration illustration={about} />
+        </motion.div>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col text-secondaryDark dark:text-secondaryLight"
+        >
           <h2 className="text-center text-3xl font-[500]">About Us</h2>
 
           <Article text="👋 Hey there! I'm Noman, an intermediate frontend developer 💻 who began my journey in 2022 with a passion for mastering { HTML, CSS, JavaScript, React, TailwindCSS } 🛠️ . I'm dedicated to creating polished user interfaces and expanding my skills in frontend development.💡" />
@@ -37,9 +55,9 @@ const About = () => {
             and creativity. 🎨 I'm excited about the possibilities of frontend
             development and look forward to expanding my expertise further. "
           />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
