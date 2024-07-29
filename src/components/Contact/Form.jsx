@@ -9,8 +9,8 @@ const Form = () => {
 
   return (
     <motion.form
-      initial={{ opacity: 0, x: 200 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.69, duration: 0.9 }}
       viewport={{ once: true }}
       className="w-full pb-7 flex flex-col gap-4 p-4 sm:pt-7 px-7 lg:pb-0 bg-secondaryLight dark:bg-secondaryDark md:rounded-xl lg:h-[91.2%]"
