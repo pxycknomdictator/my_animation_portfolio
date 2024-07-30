@@ -95,7 +95,7 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, delay: 0.3 }}
               >
-                <Button link="Download CV" URL="#" />
+                <Button link="Download CV" URL="CV/Noman.pdf" />
               </motion.div>
             </div>
           </div>

@@ -30,6 +30,10 @@
 
 - **Tailwind CSS for responsive and interactive UI && UX** 💙
 
+- **Framer Motion for Scroll Triggered Animations ✨**
+
+- **React Toastify for Alert Messages 👌**
+
 - **Vite for Hot Reloading development server or bundler** ⚡
 
 ```
